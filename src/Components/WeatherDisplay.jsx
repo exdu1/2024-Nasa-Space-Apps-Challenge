@@ -4,7 +4,6 @@ import axios from 'axios';
 const WeatherDisplay = () => {
   const [weatherInfo, setWeatherInfo] = useState({
     temperature: '',
-    feelsLike: '',
     humidity: '',
     windSpeed: '',
     visibility: '',
@@ -12,31 +11,25 @@ const WeatherDisplay = () => {
     pressure: '',
     precipitation: '',
     description: '',
-   
   });
 
   useEffect(() => {
     const fetchWeatherData = async () => {
       try {
-        const response = await axios.get('https://api.meteomatics.com/2024-10-05T00:00:00Z--2024-10-08T00:00:00Z:PT1H/t_2m:C,pressure_100m:Pa,wind_speed_FL10:mph,relative_humidity_2m:p,uv:idx,total_precipitation_accumulation_1d_efi:idx,visibility:m/52.520551,13.461804/json', {
-          auth: {
-            username: import.meta.env.VITE_METEOMATICS_USERNAME,
-            password: import.meta.env.VITE_METEOMATICS_API_KEY
-          }
-        });
-
+        // Request data from your backend (Node.js)
+        const response = await axios.get('http://localhost:3000/api/weather');
         const data = response.data;
+        console.log(data)
+
         setWeatherInfo({
-          temperature: data.data[0].coordinates[0].dates[0].value,
-          feelsLike: data.data[0].coordinates[0].dates[0].value, 
-          humidity: data.data[3].coordinates[0].dates[0].value,
-          windSpeed: data.data[2].coordinates[0].dates[0].value,
-          visibility: data.data[6].coordinates[0].dates[0].value,
-          uvIndex: data.data[4].coordinates[0].dates[0].value,
-          pressure: data.data[1].coordinates[0].dates[0].value,
-          precipitation: data.data[5].coordinates[0].dates[0].value,
-          description: '', 
-          
+          temperature: data["t_2m:C"],
+          humidity: data["relative_humidity_2m:p"],
+          windSpeed: data["wind_speed_FL10:mph"],
+          visibility: data["visibility:m"],
+          uvIndex: data["uv:idx"],
+          pressure: data["pressure_100m:Pa"],
+          precipitation: data["total_precipitation_accumulation_1d_efi:idx"],
+          description: 'No description provided', // Add a default description
         });
       } catch (error) {
         console.error('Error fetching weather data:', error);
@@ -49,15 +42,10 @@ const WeatherDisplay = () => {
   return (
     <div className="weather-display">
       <h2>Current Weather</h2>
-      <img src={weatherInfo.icon} alt="Weather Icon" className="weather-icon" />
       <div className="weather-info-grid">
         <div className="weather-info-row">
           <span>Temperature:</span>
           <span>{weatherInfo.temperature}°C</span>
-        </div>
-        <div className="weather-info-row">
-          <span>Feels Like:</span>
-          <span>{weatherInfo.feelsLike}°C</span>
         </div>
         <div className="weather-info-row">
           <span>Humidity:</span>
