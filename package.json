@@ -10,15 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "framer-motion": "^11.11.1",
-=======
     "axios": "^1.7.7",
-    "dotenv": "^16.4.5",
-    "express": "^4.21.0",
     "framer-motion": "^11.11.1",
-    "mongodb": "^6.9.0",
->>>>>>> fa59147 (Updated WeatherDisplay component to map new JSON structure)
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2"
