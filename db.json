@@ -1,0 +1,169 @@
+{
+    "version": "3.0",
+    "user": "lynch_alwyn",
+    "dateGenerated": "2024-10-06T17:05:41Z",
+    "status": "OK",
+    "data": [
+        {
+            "parameter": "t_2m:C",
+            "coordinates": [
+                {
+                    "lat": 43.653482,
+                    "lon": -79.383935,
+                    "dates": [
+                        {
+                            "date": "2024-10-06T03:50:00Z",
+                            "value": 14.9
+                        },
+                        {
+                            "date": "2024-10-06T15:50:00Z",
+                            "value": 20.7
+                        },
+                        {
+                            "date": "2024-10-07T03:50:00Z",
+                            "value": 13.1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "parameter": "pressure_100m:Pa",
+            "coordinates": [
+                {
+                    "lat": 43.653482,
+                    "lon": -79.383935,
+                    "dates": [
+                        {
+                            "date": "2024-10-06T03:50:00Z",
+                            "value": 99721
+                        },
+                        {
+                            "date": "2024-10-06T15:50:00Z",
+                            "value": 98740
+                        },
+                        {
+                            "date": "2024-10-07T03:50:00Z",
+                            "value": 98636
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "parameter": "wind_speed_FL10:mph",
+            "coordinates": [
+                {
+                    "lat": 43.653482,
+                    "lon": -79.383935,
+                    "dates": [
+                        {
+                            "date": "2024-10-06T03:50:00Z",
+                            "value": 13.9
+                        },
+                        {
+                            "date": "2024-10-06T15:50:00Z",
+                            "value": 23.7
+                        },
+                        {
+                            "date": "2024-10-07T03:50:00Z",
+                            "value": 21.6
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "parameter": "relative_humidity_2m:p",
+            "coordinates": [
+                {
+                    "lat": 43.653482,
+                    "lon": -79.383935,
+                    "dates": [
+                        {
+                            "date": "2024-10-06T03:50:00Z",
+                            "value": 65.3
+                        },
+                        {
+                            "date": "2024-10-06T15:50:00Z",
+                            "value": 65.3
+                        },
+                        {
+                            "date": "2024-10-07T03:50:00Z",
+                            "value": 70.9
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "parameter": "uv:idx",
+            "coordinates": [
+                {
+                    "lat": 43.653482,
+                    "lon": -79.383935,
+                    "dates": [
+                        {
+                            "date": "2024-10-06T03:50:00Z",
+                            "value": 0
+                        },
+                        {
+                            "date": "2024-10-06T15:50:00Z",
+                            "value": 2
+                        },
+                        {
+                            "date": "2024-10-07T03:50:00Z",
+                            "value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "parameter": "total_precipitation_accumulation_1d_efi:idx",
+            "coordinates": [
+                {
+                    "lat": 43.653482,
+                    "lon": -79.383935,
+                    "dates": [
+                        {
+                            "date": "2024-10-06T03:50:00Z",
+                            "value": -0.044
+                        },
+                        {
+                            "date": "2024-10-06T15:50:00Z",
+                            "value": 0.198
+                        },
+                        {
+                            "date": "2024-10-07T03:50:00Z",
+                            "value": 0.277
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "parameter": "visibility:m",
+            "coordinates": [
+                {
+                    "lat": 43.653482,
+                    "lon": -79.383935,
+                    "dates": [
+                        {
+                            "date": "2024-10-06T03:50:00Z",
+                            "value": 52720
+                        },
+                        {
+                            "date": "2024-10-06T15:50:00Z",
+                            "value": 53482.2
+                        },
+                        {
+                            "date": "2024-10-07T03:50:00Z",
+                            "value": 50690.1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
