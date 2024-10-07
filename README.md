@@ -1,8 +1,4 @@
-# React + Vite
+# 2024 NASA Space Apps - Leveraging Earth Observation Data for Informed Agricultural Decision-Making
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Farmers face many water related issues such as drought, heatwaves, and water quality issues. Heliara is a web application that aggregates and simplifies real time geospatial data into a dashboard that farmers can use to make decisions and respond to these water-related challenges.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
