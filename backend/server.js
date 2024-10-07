@@ -12,38 +12,24 @@ const username = process.env.METEOMATICS_USERNAME; // Your Meteomatics username
 const password = process.env.METEOMATICS_API_KEY;  // Your Meteomatics API key
 app.use(cors());
 
-const weatherUrl =`https://${username}:${password}@api.meteomatics.com/2024-10-05T23:50:00.000-04:00--2024-10-06T23:50:00.000-04:00:PT12H/t_2m:C,pressure_100m:Pa,wind_speed_FL10:mph,relative_humidity_2m:p,uv:idx,total_precipitation_accumulation_1d_efi:idx,visibility:m/43.6534817,-79.3839347/json?model=mix`
-
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
 
-
-// axios.get(weatherUrl)
-//     .then(response => {
-//         const weatherData = response.data;
-//         if (!weatherData || !weatherData.data) {
-//             return console.error("No data found");
-//         }
-
-//         // Loop through the data array (each weather parameter)
-//         weatherData.data.forEach(parameterEntry => {
-//             console.log(`Parameter: ${parameterEntry.parameter}`);
-
-//             // Accessing the coordinates array for the parameter
-//             parameterEntry.coordinates.forEach(coordinate => {
-//                 console.log(`Lat: ${coordinate.lat}, Lon: ${coordinate.lon}`);
-
-//                 // Accessing the dates and values for the parameter
-//                 coordinate.dates.forEach(dateEntry => {
-//                     console.log(`Date: ${dateEntry.date}, Value: ${dateEntry.value}`);
-//                 });
-//             });
-//         });
-//     })
-//     .catch(error => {
-//         console.error('Error fetching data from Meteomatics:', error);
-//     });
+const getCurrentDateTime = () => {
+    const now = new Date();
+    const offset = -4; // Time zone offset for EDT (UTC-4)
+    const pad = (num) => String(num).padStart(2, '0');
+  
+    const year = now.getFullYear();
+    const month = pad(now.getMonth() + 1); // Months are zero-based
+    const day = pad(now.getDate());
+    const hours = pad(now.getHours());
+    const minutes = pad(now.getMinutes());
+    const seconds = pad(now.getSeconds());
+    
+    return `${year}-${month}-${day}T${hours}:${minutes}:${seconds}.000-0${Math.abs(offset)}:00`;
+  };
 
     app.get('/api/weather', async (req, res) => {
         try {
@@ -66,7 +52,7 @@ app.listen(port, () => {
                 };
     
                 // Send the formatted data to the frontend
-                //console.log(formattedData);
+                console.log(formattedData);
                 res.json(formattedData);
             } else {
                 res.status(404).json({ message: "Weather data not found" });
@@ -76,3 +62,6 @@ app.listen(port, () => {
             res.status(500).json({ message: "Failed to fetch weather data" });
         }
     });
+
+
+      const currentDateTime = getCurrentDateTime(); 
