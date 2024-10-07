@@ -28,8 +28,8 @@ const AboutUs = () => {
     {
       id: 'Eric Du',
       name: 'Eric Du',
-      role: '',
-      description:<p className='p'> </p>,
+      role: 'Software Developer',
+      description:<p className='p'>I am a dedicated Health Informatics student with extensive clinical experience and a strong understanding of healthcare systems and regulations. I’m skilled in data analysis and digital healthcare solutions, with expertise in software requirements engineering, acceptance testing, and unit testing. I excel at leveraging my clinical insights to enhance healthcare interoperability and improve outcomes.</p>,
       imgSrc: 'src/Images/Eric Du.jpg'
     },
     {
