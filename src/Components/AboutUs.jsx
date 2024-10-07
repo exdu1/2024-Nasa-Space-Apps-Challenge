@@ -35,9 +35,8 @@ const AboutUs = () => {
     {
       id: 'Apple Jan Tacardon',
       name: 'Apple Jan Tacardon',
-      role: '',
-      description:<p className='p'> </p>,
-     
+      role: 'Software Engineer',
+      description:<p className='p'>Once upon a time, I was a software engineer, wrangling code like a digital cowgirl in the Wild West of Web Development. Now, I’ve swapped debugging with diagnosing, trading in my trusty IDE for health data systems, and embarking on a new frontier as an aspiring Health Information Technology Engineer. Same love for solving problems, just with more health charts and fewer coffee-fueled all-nighters... hopefully."  </p>,    
       imgSrc: 'src/Images/apple_tacardon.png'
     }
     ];

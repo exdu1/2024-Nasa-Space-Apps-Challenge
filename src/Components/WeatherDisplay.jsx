@@ -41,12 +41,8 @@ const WeatherDisplay = () => {
 
   return (
     <div className="weather-container">
-      
-      <video className="background-video" autoplay loop muted >
-          <source src="/Videos/weather-animated.mp4" type="video/mp4"></source>
-        </video>
-
-      <h2>Current Weather</h2>
+      <div className="background-overlay">
+        <h2>Current Weather</h2>
       <div className="weather-info-grid">
         <div className="weather-info-row">
           <span>Temperature:</span>
@@ -81,6 +77,7 @@ const WeatherDisplay = () => {
           <span>{weatherInfo.description}</span>
         </div>
       </div>
+    </div>
     </div>
   );
 };
