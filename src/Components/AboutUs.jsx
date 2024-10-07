@@ -21,7 +21,7 @@ const AboutUs = () => {
       id: 'Alwyn Lynch',
       name: 'Alwyn Lynch',
       role: 'Software Developer',
-      description:<p className='p'> Alwyn Lynch is an aspiring software engineer with a passion for leveraging technology to solve real-world problems. Currently pursuing a degree in Software Engineering with a focus on Health Informatics, Alwyn has a strong foundation in data analysis, machine learning, and full-stack development. With a background in projects ranging from healthcare to environmental sustainability, Alwyn is eager to apply their skills to the challenges posed by the NASA Space App Challenge. Alwyn’s technical expertise includes Python, JavaScript, and MongoDB, which they plan to utilize in creating innovative solutions that could help shape the future of space exploration and earth science. </p>,
+      description:<p className='p'> I am an aspiring software engineer with a passion for leveraging technology to solve real-world problems. Currently pursuing a degree in Software Engineering with a focus on Health Informatics, I have has a strong foundation in data analysis, machine learning, and full-stack development. With a background in projects ranging from healthcare to environmental sustainability, I am is eager to apply my skills to the challenges posed by the NASA Space App Challenge. My technical expertise includes Python, JavaScript, and MongoDB, which I plan to utilize in creating innovative solutions that could help shape the future of space exploration and earth science. </p>,
      
       imgSrc: 'src/Images/Alwyn Lynch.jpg'
     },
