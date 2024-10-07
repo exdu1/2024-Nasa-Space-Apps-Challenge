@@ -38,7 +38,7 @@ const AboutUs = () => {
       role: '',
       description:<p className='p'> </p>,
      
-      imgSrc: 'https://via.placeholder.com/150'
+      imgSrc: 'src/Images/apple_tacardon.png'
     }
     ];
  
